@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Blog</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 700px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        .content-editable {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            min-height: 200px;
+            outline: none;
+            overflow-y: auto;
+            resize: none;
+            background-color: #f9f9f9;
+        }
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .toolbar button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .toolbar button:hover {
+            background-color: #0056b3;
+        }
+        .toolbar .undo, .toolbar .delete {
+            background-color: #dc3545;
+        }
+        .toolbar .undo:hover, .toolbar .delete:hover {
+            background-color: #c82333;
+        }
+        button[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Blog Post</h1>
+        <div class="toolbar">
+            <button type="button" onclick="formatText('bold')">Bold</button>
+            <button type="button" onclick="formatText('italic')">Italic</button>
+            <button type="button" onclick="formatText('underline')">Underline</button>
+            <button type="button" class="undo" onclick="undoText()">Undo</button>
+            <button type="button" class="delete" onclick="deleteContent()">Delete</button>
+        </div>
+        <form id="blog-form">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="content">Content:</label>
+                <div id="content" class="content-editable" contenteditable="true"></div>
+            </div>
+            <button type="submit">Post Blog</button>
+        </form>
+    </div>
+
+    <script>
+        function formatText(command) {
+            document.execCommand(command, false, null);
+        }
+
+        function undoText() {
+            document.execCommand('undo', false, null);
+        }
+
+        function deleteContent() {
+            if (confirm("Are you sure you want to delete all content?")) {
+                document.getElementById('content').innerHTML = '';
+            }
+        }
+
+        document.getElementById('blog-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').innerHTML;
+            if (title && content) {
+                alert('Your blog post has been submitted successfully!');
+                // Here you would typically send the data to a server
+                // Reset form after submission
+                document.getElementById('blog-form').reset();
+                document.getElementById('content').innerHTML = '';
+            } else {
+                alert('Please fill in both the title and content.');
+            }
+        });
+    </script>
+</body>
+</html>

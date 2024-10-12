@@ -1,0 +1,288 @@
+.about-section .hero-image {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section h1, .about-section h2 {
+    color: #333;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.bio {
+    font-size: 0.9em;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .about-section .hero-image {
+        height: 200px;
+    }
+
+    .team-member {
+        margin-bottom: 20px;
+    }
+}
+ 
+
+.journey {
+    background-color: #d6b273; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 40px 20px; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center; /* Centered text */
+    margin-top: 5rem; /* Increased margin-top for spacing */
+}
+
+.journey h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    color: #003F91; /* Highlight color for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.journey p {
+    font-size: 1.25rem; /* Larger font size for the paragraph */
+    color: #333; /* Darker text color for better readability */
+    line-height: 1.6; /* Increased line height for readability */
+    max-width: 800px; /* Maximum width for better layout on large screens */
+    margin: 0 auto; /* Centering the paragraph */
+}
+
+
+.testimonials {
+    background: #e3b4d5; /* Light background for contrast */
+    border-radius: 12px; /* Rounded corners */
+    padding: 40px 20px; /* Generous padding */
+    text-align: center; /* Center text alignment */
+    margin-top: 5rem; /* Spacing above the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: relative; /* Positioning context for potential pseudo-elements */
+}
+
+.testimonials h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    color: #003F91; /* Highlight color for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.testimonials blockquote {
+    font-size: 1.25rem; /* Larger font size for the blockquote */
+    line-height: 1.6; /* Increased line height for readability */
+    font-style: italic; /* Italicized text for emphasis */
+    margin: 0 auto; /* Center the blockquote */
+    max-width: 800px; /* Maximum width for better readability */
+    position: relative; /* Positioning context for pseudo-elements */
+    padding: 20px; /* Padding around the blockquote */
+    border-left: 5px solid #003F91; /* Left border for visual interest */
+    background: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners for blockquote */
+}
+
+.testimonials blockquote::before {
+    content: "\201C"; /* Opening quote symbol */
+    font-size: 4rem; /* Large font size for the quote symbol */
+    color: #003F91; /* Color for the quote symbol */
+    position: absolute; /* Absolute positioning */
+    top: -20px; /* Position above the blockquote */
+    left: 20px; /* Position to the left */
+}
+
+.testimonials .author {
+    display: block; /* Display author on a new line */
+    margin-top: 10px; /* Space above the author name */
+    font-weight: bold; /* Bold font for the author */
+    color: #7F7F7F; /* Gray color for the author name */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .testimonials blockquote {
+        font-size: 1rem; /* Adjust blockquote font size */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
+
+
+.values {
+    background: #a1e7f7; /* Light background color for a clean look */
+    border-radius: 12px; /* Rounded corners */
+    padding: 40px 20px; /* Generous padding */
+    text-align: center; /* Centered text alignment */
+    margin-top: 5rem; /* Spacing above the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.values h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    color: #003F91; /* Highlight color for the heading */
+    margin-bottom: 1.5rem; /* Space below the heading */
+    font-weight: 700; /* Bold font weight for emphasis */
+}
+
+.values ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center items horizontally */
+    gap: 2rem; /* Space between items */
+}
+
+.values li {
+    font-size: 1.25rem; /* Larger font size for list items */
+    background: #95ae76; /* White background for list items */
+    border: 2px solid #003F91; /* Border color matching the heading */
+    border-radius: 8px; /* Rounded corners for list items */
+    padding: 15px 20px; /* Padding inside list items */
+    color: #003F91; /* Text color for list items */
+    font-weight: 500; /* Slightly bold text for list items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.values li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .values h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .values ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 1rem; /* Reduced gap between items */
+    }
+
+    .values li {
+        font-size: 1rem; /* Adjust font size for list items */
+        padding: 10px 15px; /* Reduced padding for list items */
+    }
+}
+
+
+.content {
+    padding: 40px 20px; /* Padding around the section */
+    background: #caecbc; /* White background for a clean look */
+    border-radius: 12px; /* Rounded corners for a modern touch */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-top: 5rem; /* Spacing above the section */
+    text-align: center; /* Centered text alignment */
+}
+
+.mission {
+    background: linear-gradient(135deg, #003F91, #7F7F7F); /* Gradient background for visual interest */
+    color: #ffffff; /* White text for contrast */
+    border-radius: 12px; /* Rounded corners */
+    padding: 40px 20px; /* Generous padding */
+    position: relative; /* Positioning context for potential pseudo-elements */
+    overflow: hidden; /* Hide overflow to keep background effects contained */
+}
+
+.mission h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    color: #ffffff; /* White color for the heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    font-weight: 700; /* Bold font for emphasis */
+}
+
+.mission p {
+    font-size: 1.25rem; /* Larger font size for the paragraph */
+    line-height: 1.6; /* Increased line height for readability */
+    margin: 0 auto; /* Center the paragraph */
+    max-width: 800px; /* Maximum width for better readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .mission p {
+        font-size: 1rem; /* Adjust paragraph font size for smaller screens */
+        padding: 15px; /* Reduced padding */
+    }
+
+    .content {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+.footer {
+    background-color: #f0b5b5;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about, .footer-social {
+    margin: 10px;
+}
+
+.footer-about h3, .footer-social h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.footer-about p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-about, .footer-social {
+        width: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icon {
+        margin: 5px 0;
+    }
+}

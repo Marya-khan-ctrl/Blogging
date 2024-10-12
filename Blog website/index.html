@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>BLOG WEBSITE</title>
+
+    <style>
+      .landing-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+        background-color: #FFB6C1; /* Light pink background */
+        min-height: 500px;
+        position: relative;
+      }
+
+      .landing-text {
+        max-width: 45%;
+        animation: fadeInText 1s ease-in-out;
+      }
+
+      .breadcrumb {
+        font-size: 14px;
+        color: #888;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 48px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .subheading {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      .btn-cta {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #FF6347; /* Dark Orange */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .landing-image {
+        max-width: 50%;
+        position: relative;
+        animation: slideIn 1s ease-in-out;
+      }
+
+      .landing-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow for the image */
+      }
+
+      .text-dark-orange {
+    color: darkorange;
+}
+
+      /* Keyframes for image animation */
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      /* Keyframes for text animation */
+      @keyframes fadeInText {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .landing-section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .landing-text, .landing-image {
+          max-width: 100%;
+        }
+
+        .landing-image img {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar" style="background-color: #FFB6C1;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="LOGO.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+          </a>
+          <div class="ms-auto">
+            <a href="signup.html" class="btn btn-outline-warning me-2" style="border-color: #FF6347; color: #FF6347;">Sign In</a>
+            <a href="signin.html" class="btn" style="background-color:#FF6347; color: white;">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="landing-section">
+        <div class="landing-text">
+            
+            <h1>Create a blog</h1>
+            <p class="subheading">
+                Share your story with the world. Create a beautiful, personalized blog that fits your brand. 
+                Grow your audience with built-in marketing tools, or transform your passion into revenue by gating access with a paywall.
+            </p>
+            <a href="createblog.html" class="btn-cta">Get Started</a>
+        </div>
+        <div class="landing-image">
+            <img src="mainpage.jpg" alt="Blog Preview">
+        </div>
+      </div>
+
+      <div class="seeblogs">
+        <h2 class="text-center mb-1 mt-5 p-4 text-dark-orange">MY BLOGS</h2>
+        <div class="d-flex justify-content-center">
+          
+          <a href="all.html" class="btn btn-outline-info mx-2" >All</a>
+          <a href="tech.html" class="btn btn-outline-info mx-2" >Tech</a>
+          <a href="fashion.html" class="btn btn-outline-info mx-2" >Fashion</a>
+      </div>
+      
+    </div>
+    
+
+
+    <div class="cards" style="background-color: rgb(228, 174, 102);">
+
+    <div class="container mt-5"style="background-color: antiquewhite;">
+      <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="webdeveloper1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">What Has Happened of All of the web Developers?</h5>
+                      <p class="card-text text-muted">18 July 2021 / Web Development</p>
+                      <p class="card-text">The web development landscape has evolved drastically over the past few years. With new tools, frameworks, and best practices emerging,</p>
+                      <a href="post1.html" class="btn btn-outline-info">Read More</a>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="webdesign1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">What Has Happened of All of the web Design Ideas?</h5>
+                      <p class="card-text text-muted">18 July 2021 / Web Design</p>
+                      <p class="card-text">Web design trends are constantly evolving, with new ideas emerging every day. However, some classic design principles remain timeless.</p>
+                      <a href="post2.html" class="btn btn-outline-info">Read More</a>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Card 3 -->
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="fashion1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">How to Launch a New Tech Industry?</h5>
+                      <p class="card-text text-muted">18 July 2021 / Tech Industry</p>
+                      <p class="card-text">Launching a new tech industry is a complex and challenging endeavor. This article explores the critical steps needed to break into </p>
+                      <a href="fashion.html" class="btn btn-outline-info">Read More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+  <div class="container mt-5 " style="background-color: antiquewhite;">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="four.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">What Has Happened of All of the web Developers?</h5>
+                    <p class="card-text text-muted">18 July 2021 / Web Development</p>
+                    <p class="card-text">The web development landscape has evolved drastically over the past few years. With new tools, frameworks, and best practices emerging,</p>
+                    <a href="post2.html" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="five.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">What Has Happened of All of the web Design Ideas?</h5>
+                    <p class="card-text text-muted">18 July 2021 / Web Design</p>
+                    <p class="card-text">Web design trends are constantly evolving, with new ideas emerging every day. However, some classic design principles remain timeless.</p>
+                    <a href="post3.html" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="six.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">How to Launch a New Tech Industry?</h5>
+                    <p class="card-text text-muted">18 July 2021 / Tech Industry</p>
+                    <p class="card-text">Launching a new tech industry is a complex and challenging endeavor. This article explores the critical steps needed to break into </p>
+                    <a href="post3.html" class="btn btn-outline-info">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<div class="container mt-5" >
+  <div class="about-section">
+      <div class="hero-image" style="background-image: url('about.jpg');">
+          <h1 class="text-center text-light">Who We Are</h1>
+      </div>
+
+
+      <div class="content mt-5">
+          <div class="mission">
+              <h2>Our Mission</h2>
+              <p>To inspire, educate, and connect like-minded individuals through thoughtful content and meaningful interactions.</p>
+          </div>
+
+
+
+          <div class="team mt-5">
+              <h2 >Meet the Team</h2>
+              <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                      <div class="team-member text-center">
+                          <img src="jane.jpg" class="rounded-circle" alt="Team Member">
+                          <h3>Jane Doe</h3>
+                          <p>Founder & Editor</p>
+                          <p class="bio">Jane is the creative mind behind the blog. With a passion for storytelling, she brings ideas to life through words.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                      <div class="team-member text-center">
+                          <img src="john.jpg" class="rounded-circle" alt="Team Member">
+                          <h3>John Smith</h3>
+                          <p>Content Strategist</p>
+                          <p class="bio">John ensures that the content is engaging and informative, keeping readers hooked from start to finish.</p>
+                      </div>
+                  </div>
+                  <!-- Add more team members as needed -->
+
+                  <div class="col-md-4 col-sm-6">
+                    <div class="team-member text-center">
+                        <img src="lahn.jpg" class="rounded-circle" alt="Team Member">
+                        <h3>John Smith</h3>
+                        <p>Content Strategist</p>
+                        <p class="bio">John ensures that the content is engaging and informative, keeping readers hooked from start to finish.</p>
+                    </div>
+                </div>
+
+
+
+
+              </div>
+          </div>
+
+          <div class="journey mt-5">
+            <h2>Our Journey</h2>
+            <p>Started in 2015, our blog has grown from a small personal project to a trusted source for thousands of readers worldwide.</p>
+        </div>
+        
+        
+
+
+          <div class="values mt-5">
+              <h2>Our Core Values</h2>
+              <ul>
+                  <li>Authenticity</li>
+                  <li>Community</li>
+                  <li>Creativity</li>
+              </ul>
+          </div>
+
+          <div class="testimonials mt-5">
+            <h2>What Our Readers Say</h2>
+            <blockquote>
+                "This blog has changed my perspective on so many things. I look forward to every new post!" 
+                <span class="author">- Avid Reader</span>
+            </blockquote>
+        </div>
+        
+
+        <div class="cta mt-5 text-center">
+          <h2>Join Our Journey</h2>
+          <p>Subscribe to our newsletter and never miss an update.</p>
+          <a href="#" class="btn btn-info" onclick="subscribeAlert()">Subscribe Now</a>
+      </div>
+      
+      <script>
+          function subscribeAlert() {
+              alert('Thank you for subscribing! Please check your email for confirmation.');
+          }
+      </script>
+      
+      </div>
+  </div>
+</div>
+
+
+<footer class="footer mt-3 align-items-center">
+  <div class="container">
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>We share the latest updates and trends in the world of blogging.</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <div class="social-icon"><a href="#"><img src="fb2.png" alt="Facebook"></a></div>
+        <div class="social-icon"><a href="#"><img src="twitter.png" alt="Twitter"></a></div>
+        <div class="social-icon"><a href="#"><img src="instagram.jpeg" alt="Instagram"></a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

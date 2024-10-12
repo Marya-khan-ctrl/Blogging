@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Trends 2024</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff4081, #ff80ab);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            animation: fadeInDown 2s;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+        .content {
+            padding: 30px;
+        }
+        .content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 2s;
+        }
+        .content h2 {
+            font-size: 1.8rem;
+            color: #ff4081;
+            margin-top: 20px;
+        }
+        .content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .quote {
+            background: #ff4081;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 2s;
+        }
+        .quote::before {
+            content: "“";
+            font-size: 3rem;
+            vertical-align: top;
+        }
+        .quote::after {
+            content: "”";
+            font-size: 3rem;
+            vertical-align: bottom;
+        }
+        .key-points {
+            margin-top: 30px;
+            animation: fadeInRight 2s;
+        }
+        .key-points h3 {
+            color: #ff4081;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .key-points ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .key-points ul li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            background: #ff4081;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeInUp 2s;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="animate__animated animate__fadeInDown">Fashion Trends 2024</h1>
+        <p class="animate__animated animate__fadeInDown">Discover the Latest in Fashion</p>
+    </header>
+
+    <div class="content container">
+        <img src="fashion1.jpg" alt="Fashion Trends" class="animate__animated animate__fadeInUp">
+
+        <h2 class="animate__animated animate__fadeInLeft">Introduction</h2>
+        <p>The fashion industry is constantly evolving, with new trends emerging every year. As we step into 2024, we explore the key fashion trends that are shaping the industry and influencing styles across the globe.</p>
+
+        <h2 class="animate__animated animate__fadeInLeft">Top Trends</h2>
+        <p>This year, fashion is seeing a blend of retro and modern styles, with bold colors, oversized silhouettes, and sustainable fabrics taking center stage. Designers are also embracing technology, incorporating smart textiles and innovative materials into their collections.</p>
+
+        <div class="quote animate__animated animate__zoomIn">
+            "Fashion is the armor to survive the reality of everyday life."
+        </div>
+
+        <h2 class="animate__animated animate__fadeInLeft">Seasonal Highlights</h2>
+        <p>Each season brings its own set of trends, from vibrant spring florals to cozy winter layers. This year's seasonal highlights include intricate embroidery, playful prints, and versatile layering techniques that allow for effortless transitions between seasons.</p>
+
+        <img src="fashion2.jpg" alt="Fashion Trends 2024" class="animate__animated animate__fadeInUp">
+
+        <h2 class="animate__animated animate__fadeInLeft">Sustainable Fashion</h2>
+        <p>As awareness of environmental issues grows, sustainable fashion is becoming increasingly important. Brands are focusing on eco-friendly materials, ethical production practices, and circular fashion models to reduce their impact on the planet.</p>
+
+        <div class="key-points animate__animated animate__fadeInRight">
+            <h3>Key Points</h3>
+            <ul>
+                <li>Blending retro and modern styles with bold colors and oversized silhouettes.</li>
+                <li>Incorporating smart textiles and innovative materials.</li>
+                <li>Embracing sustainable fashion practices and eco-friendly materials.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Fashion Blog | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
